@@ -242,54 +242,27 @@ function isWin(a, b, c) {
 
 function looser(){
   console.log('looser')
-  lineRNum = rand(15)
-  switch (lineRNum){
-    case 1:
-    winnerLine.innerHTML = 'looser'
-    break
-    case 2:
-    winnerLine.innerHTML = 'looser'
-    break
-    case 3:
-    winnerLine.innerHTML = 'try again'
-    break
-    case 4:
-    winnerLine.innerHTML = 'begambleaware.org for help'
-    break
-    case 5:
-    winnerLine.innerHTML = 'looser'
-    break
-    case 6:
-    winnerLine.innerHTML = 'better luck next time'
-    break
-    case 7:
-    winnerLine.innerHTML = 'gambling is a sickness. Get help.'
-    break
-    case 8:
-    winnerLine.innerHTML = 'try again'
-    break
-    case 9:
-    winnerLine.innerHTML = 'you have lost'
-    break
-    case 10:
-    winnerLine.innerHTML = 'try again'
-    break
-    case 11:
-    winnerLine.innerHTML = 'looser'
-    break
-    case 12:
-    winnerLine.innerHTML = 'Big looser'
-    break
-    case 13:
-    winnerLine.innerHTML = 'looser'
-    break
-    case 14:
-    winnerLine.innerHTML = 'looser'
-    break
-    case 15:
-    winnerLine.innerHTML = 'looser'
-    break
-  }
+
+const looserLines = {
+  1: 'looser',
+  2: 'looser',
+  3: 'try again',
+  4: 'begambleaware.org for help',
+  5: 'looser',
+  6: 'better luck next time',
+  7: 'gambling is a sickness. Get help.',
+  8: 'try again',
+  9: 'you have lost',
+  10: 'try again',
+  11: 'looser',
+  12: 'Big looser',
+  13: 'looser',
+  14: 'looser',
+  15: 'looser',
+};
+
+const length = Object.keys(looserLines).length;
+  winnerLine.innerHTML = looserLines[rand(length)]
 }
 
 function spinReels() { 
