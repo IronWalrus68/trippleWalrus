@@ -1,0 +1,86 @@
+:root{
+    margin: 0;
+    padding: 0;
+    --primaryColour: red;
+    --secondaryColour: yellow;
+    background: linear-gradient(45deg, red 0%, orange);
+}
+body{
+  border: 20px dotted yellow;
+}
+
+.slot-machine {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 61vh;
+
+}
+#winnerLineWrapper{
+  display: flex;
+  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+    font-size: 2em;
+}
+#lastWin{
+  padding-top: 1em;
+  font-size: 0.5em;
+}
+header{
+  height:15vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  }
+.scoreWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px dotted yellow;
+  width: 6vh;
+  height: 6vh;
+}
+.score{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+}
+footer{height:15vh;}
+
+.reels{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reels-container {
+border: 10px dotted yellow;
+background-color: rgb(210, 198, 198);
+  display: flex;
+  justify-content: center;
+}
+
+.reels {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 10px;
+  transition: 5s;
+}
+
+#spin-button {
+  margin-top: 20px;
+}
+p{
+  padding-left: 1em;
+}
+h1{
+  text-decoration: dotted;
+  font-size: 5em;
+  text-decoration: underline dotted yellow;
+}

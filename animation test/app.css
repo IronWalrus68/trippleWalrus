@@ -1,0 +1,39 @@
+.reels{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reels-container {
+border: 10px dotted yellow;
+background-color: rgb(210, 198, 198);
+  display: flex;
+  justify-content: center;
+}
+
+.reels {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+#spin-button {
+  margin-top: 20px;
+}
+
+.reelAnimation1{
+    border: 1px solid red;
+    height: 3em;
+    width: 3em;
+    
+}
+#reels1{
+    display: flex;
+    flex-direction: column;
+}
+.reelAnimation1{
+    display: flex;
+        align-items: center;
+    justify-content: center;
+}
